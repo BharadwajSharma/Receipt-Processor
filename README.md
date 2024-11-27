@@ -1,13 +1,25 @@
-This is a simple Flask-based API application that processes receipts, calculates points based on certain rules, and stores receipt information.This project aims to develop a web service in alignment with the 'Receipt Processor' task outlined by Fetch Rewards. The service is designed to meet the requirements of the provided API documentation, facilitating the processing of receipts and the calculation of reward points.  The application provides two main endpoints: one for processing new receipts and one for retrieving points for a specific receipt.
+# Receipt Processor API
 
-Features:
-Receipt processing: Receives a receipt in JSON format, processes it, and calculates points based on various rules.
-Retrieve points: Allows querying the calculated points for a specific receipt by its ID.
+## Overview
 
-Tech Stack
-Backend: Python, Flask
-Containerization: Docker
+The **Receipt Processor API** is a simple web service built using **Flask** (Python) that allows users to submit receipt data in JSON format and calculates reward points based on the total amount spent. The service processes receipts, assigns reward points, and returns the results for further use. This project is designed to demonstrate the functionality of building APIs using Flask, handling JSON data, and processing requests and responses.
 
-About Author:
-Hi, I’m Bharadwaj, a full-stack developer with expertise in Java, AWS, React, and Angular. I’m passionate about using technology to solve real-world challenges and am always eager to stay ahead of the latest tech trends.I focus on building scalable web solutions, migrating systems to AWS, and implementing RESTful APIs.
+## Features
 
+- **POST /receipts/process**: Submit receipt data to calculate reward points.
+- **GET /receipts/{receipt_id}**: Retrieve the reward points for a specific receipt based on a unique receipt ID.
+
+## Technologies
+
+- **Python**: Backend programming language.
+- **Flask**: Web framework to build the API.
+- **Docker**: For easy deployment and containerization.
+- **Postman or cURL**: For API testing.
+
+## How to Run
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/receipt-processor.git
+   cd receipt-processor
